@@ -331,7 +331,7 @@ margin-left:35%;
     height:100vh;
   }
   .about{
-    height:160vh
+    height:auto;
   }
  
   .imgholder{
@@ -343,7 +343,7 @@ margin-left:35%;
     font-size:0.9rem
   }
   .textholder{
-    height:40%;
+    height:100%;
   }
   .navcontent-1 h1{
     font-size: 1.2rem;
@@ -351,7 +351,7 @@ margin-left:35%;
   }
  
   .my-work{
-    height:170vh
+    height:auto
   }
   .pj1,.pj2,.pj3{
     opacity:1;
@@ -369,7 +369,7 @@ margin-left:35%;
     transform: none;
   }
   .contacts{
-    height:110vh
+    height:auto
   }
 .footer{
   height:50px;
@@ -430,7 +430,9 @@ margin-left:35%;
     height:80vh;
   }
   .about{
-    height:135vh
+   position:relative ;
+   height:auto
+  
   }
  
   .imgholder{
@@ -442,7 +444,8 @@ margin-left:35%;
     font-size:0.9rem
   }
   .textholder{
-    height:40%;
+    height:100%;
+    position:relative
   }
   .navcontent-1 h1{
     font-size: 1.2rem;
@@ -450,7 +453,7 @@ margin-left:35%;
   }
  
   .my-work{
-    height:140vh
+   height:auto
   }
   .work{
     height:40vh
@@ -468,7 +471,7 @@ margin-left:35%;
     transform: none;
   }
   .contacts{
-    height:110vh
+    height:auto;
   }
   .footer{
     height:50px;
