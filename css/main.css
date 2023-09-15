@@ -745,11 +745,6 @@ video {
   background-color: rgb(63 63 255 / var(--tw-bg-opacity));
 }
 
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -1304,11 +1299,11 @@ nav{
   }
 
   .overall{
-    height:100vh;
+    height:80vh;
   }
 
   .about{
-    height:150vh
+    height:140vh
   }
 
   .imgholder{
@@ -1330,7 +1325,7 @@ nav{
   }
 
   .my-work{
-    height:160vh
+    height:140vh
   }
 
   .work{
