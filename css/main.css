@@ -600,8 +600,8 @@ video {
   margin-top: 8rem;
 }
 
-.mt-36 {
-  margin-top: 9rem;
+.mt-40 {
+  margin-top: 10rem;
 }
 
 .mt-5 {
@@ -610,6 +610,14 @@ video {
 
 .mt-7 {
   margin-top: 1.75rem;
+}
+
+.mt-36 {
+  margin-top: 9rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
 }
 
 .flex {
@@ -1150,6 +1158,14 @@ nav{
 
 .mobilenav{
   position: relative;
+}
+
+.about,.mywork,.contacts{
+  height: auto;
+}
+
+.overall{
+  height:100vh
 }
 
 /* media query for  small tablet */

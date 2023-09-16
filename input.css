@@ -287,8 +287,12 @@ margin-left:35%;
  position: relative;
 
 }
-
-
+.about,.mywork,.contacts{
+  height: auto;
+}
+.overall{
+  height:100vh
+}
  
 
 /* media query for  small tablet */
