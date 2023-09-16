@@ -91,12 +91,3 @@ const tl3 = gsap.timeline({
   
   })
   
-const buttonsubmit= document.querySelector('.btnsubmit')
-const input=document.querySelector('input')
-const textarea=document.querySelector('textarea')
-buttonsubmit.addEventListener('click',(e)=>{
- e.preventDefault() 
- input.value=""
- textarea.value=""
-
-})

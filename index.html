@@ -137,9 +137,14 @@
             <p>This app connects you to the talented people around the world.Download it on playstore and apple store.
                 (Oncoming)
             </p>
-            <a href="#">
-                <img src="icons/link.png" class="linkicon" />
-            </a>
+            <div class="flex items-center mt-8 justify-between">
+                <a href="#">
+                    <img class="h-7 w-7" src="icons/link.png" class="linkicon" />
+                </a>
+                <a class="ml-10" href="#">
+                    <img class="h-7 w-7" src="icons/github (2).svg" class="linkicon" />
+                </a>
+            </div>
         </div>
        </div>
        <div class=" relative work "data-aos="fade-up"data-aos-duration="1000"data-aos-delay="200">
@@ -149,9 +154,15 @@
             <p>This app enables you to see the weather of varioue places and enables you to know the weather inthe country or city.Download it on playstore and apple store.
                 (onComing)
             </p>
-            <a href="#">
-                <img src="icons/link.png" class="linkicon" />
-            </a>
+            <div class="flex items-center justify-between mt-8">
+                <a href="#">
+                    <img class="h-7 w-7" src="icons/link.png" class="linkicon" />
+                </a>
+                <a class="ml-10" href="#">
+                    <img class="h-7 w-7" src="icons/github (2).svg" class="linkicon" />
+                </a>
+            </div>
+          
         </div>
        </div>
        <div class=" relative work "data-aos="fade-up"data-aos-duration="1000"data-aos-delay="300">
@@ -161,9 +172,14 @@
             <p>This app enables you to see the weather of varioue places and enables you to know the weather inthe country or city.Download it on playstore and apple store.
                 (onComing)
             </p>
-            <a href="#">
-                <img src="icons/link.png" class="linkicon" />
-            </a>
+            <div class="flex items-center mt-8 justify-between">
+                <a href="#">
+                    <img class="h-7 w-7" src="icons/link.png" class="linkicon" />
+                </a>
+                <a class="ml-10" href="#">
+                    <img class="h-7 w-7" src="icons/github (2).svg" class="linkicon" />
+                </a>
+            </div>
         </div>
        </div>
     </div>
@@ -172,6 +188,7 @@
 </div>
 
 <div class=" relative contacts ml-5 mt-5 lg:ml-20   grid-cols-1 h-100 lg:pl-10 grid lg:grid-cols-2 gap-2 " id="Contact"data-aos="fade-up"data-aos-duration="1000"data-aos-delay="500" >
+    
     <div class="infor">
         <h1 class="text-4xl font-bold ">Contact Me</h1>
         <div class="gmail mt-5 flex  items-center ">
@@ -191,10 +208,10 @@
                 <a class=" "  href="https://twitter.com/mike_milz_">  
                     <img class=" "  src="./icons/twitter-x-fill.svg"/>
                 </a>    
-                <a class="ml-3 "  href="https://twitter.com/mike_milz_">  
+                <a class="ml-3 "  href="https://instagram.com/adigunmichael_/">  
                     <img class=" "  src="./icons/instagram.svg"/>
                 </a>                                                           
-                <a class="ml-3 "  href="https://twitter.com/mike_milz_">  
+                <a class="ml-3 "  href="https://github.com/adigunicha">  
                     <img  src="./icons/github (2).svg"/>
                 </a>  
        
@@ -207,7 +224,10 @@
         <form action="" name="submit-to-google-sheet">
             <input type="text" name="Name" placeholder="Fullname" autocomplete="off" required>
             <input type="email" name="Email" placeholder="Email" autocomplete="off" required>
-            <textarea name="" id="" class="Textarea" placeholder="Your Message" autocomplete="off" ></textarea>
+            <textarea name="Message" id="" class="Textarea" placeholder="Your Message" autocomplete="off" ></textarea>
+            <div class="alert">
+                Your message has been submitted successfully.Thank you 😃
+            </div>
             <button class="btnsubmit mt-10 font-bold bg-theme rounded-lg px-2 py-1" type="submit" >Submit</button>
         </form>
       
@@ -232,16 +252,26 @@
     AOS.init()
 </script>
 <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbx41faW4Bib9PyLtkZOwSxer4isnhSPox5O6jcvamMbRxZ8ZA58F1P8i1GM97wZ0Y9lHw/exec'
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzIFLMOJan4xsaBCgyLBNcVrgLTQKtMQY6P9SRaayFABCSzcEG5C-RC5ROTFmTcWYin/exec'
     const form = document.forms['submit-to-google-sheet']
-  
+    const message = document.querySelector('.alert')
+    const input=document.querySelector('input')
+    const textarea=document.querySelector('.Textarea')
     form.addEventListener('submit', e => {
       e.preventDefault()
       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => console.log('Success!', response))
-        .catch(error => console.error('Error!', error.message))
+        .then(() =>{
+            message.style.display="block"
+         setTimeout(()=>{
+            message.style.display="none"
+         },
+         8000
+         )     
+             form.reset()
+            })
+        .catch(error => message.innerHTML="Message could not submit check your internet connection and try again later" )
     })
-  </script>
+    </script>
 <script src="app.js"></script>
 </body>
 </html>
