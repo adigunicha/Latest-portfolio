@@ -90,4 +90,12 @@ const tl3 = gsap.timeline({
     building.classList.toggle('buildings')
   
   })
+  const navelem=navbar.querySelectorAll('*')
+  navelem.forEach((elem)=>{
+    elem.addEventListener('click',()=>{
+      navbar.classList.toggle('navbare')
+    building.classList.toggle('buildings')
+    })
+  })
+  
   
